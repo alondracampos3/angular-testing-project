@@ -1,0 +1,8 @@
+<div>
+    @for (t of task; track t) {
+        <p>{{task}}</p>
+    
+    <button (click)="deleteTask(t)"   >eliminar</button>
+    <button>editar</button>
+}
+</div>
