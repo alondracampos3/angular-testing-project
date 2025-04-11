@@ -2,7 +2,7 @@
 @for (t of task; track t) {
 <p>{{t}}</p>}
 
-<input  type="text"><button >Agregar</button>
+<input [(ngModel)]="task" type="text"><button (click)="addTask()">Agregar</button>
 <br>
-<input type="text"><button >Actualizar</button>
+<input [(ngModel)]="task" type="text"><button (click)="updateTask()" >Actualizar</button>
 </div>
